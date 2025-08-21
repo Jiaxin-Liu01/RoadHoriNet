@@ -1,6 +1,6 @@
 import torch
 
-from horizenLine.datasets.dimondMap_ljx import HeatmapBoxCarsDataset
+from horizenLine.datasets.dimondMap import HeatmapBoxCarsDataset
 
 import os
 import yaml
