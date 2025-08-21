@@ -5,8 +5,8 @@
 本项目的训练数据集为公开数据集BoxCars116k，包含4个pkl文件和18个场景的json文件。  
 请将pkl文件放置于horizenLine/datasets/BoxCars116k文件夹，json文件夹放置于horizenLine/datasets，形成horizenLine/datasets/json_data/...
 # 1.2 数据预处理
-（1）运行`RoadHoriNet/horizenLine/datasets/dimondMap.py`，生成标签的热力图   
-（2）运行`horizenLine/train/createYaml.py`，对标签的热力图进行两个消失点的提取。如此，待送入网络的单张车辆图像和对应消失点标签准备完成
+（1）运行`RoadHoriNet/horizenLine/datasets/dimondMap.py`，将消失点标签进行钻石空间参数化   
+（2）运行`horizenLine/train/createYaml.py` 准备待送入网络的单张车辆图像和对应消失点标签，生成yaml文件
 # 2.运行
 # 2.1 训练
 运行`horizenLine/train/trainYolo11.py`，生成权重文件，保存于`horizenLine/train/runs/pose`目录下。
