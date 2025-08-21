@@ -17,13 +17,9 @@ if __name__ == '__main__':
     input_size = 128
     eval_record = True
 
-    # hl_py_path = r'E:\liujiaxin\yolo11\horizenLine\train\runs\pose\yolo11\weights\best.pt'
-    hl_py_path = r'E:\liujiaxin\yolo11\horizenLine\train\runs\pose\yolo11_Dysample_pl\weights\best.pt'
-    # -----ljx for moredatasets
-    # file_path = r'E:\liujiaxin\yolo11\horizenLine\datasets\BoxCars116k\predictDataset\l2.png'
-    file_path = r'E:\liujiaxin\yolo11\horizenLine\datasets\BoxCars116k\predictDataset\l2.png'
-    json_path = 'E:\liujiaxin\yolo11\horizenLine\datasets\json_data\session2_left\system_dubska_optimal_calib.json'
-    # hl_py_path = r'E:\liujiaxin\yolo11\horizenLine\train\runs\pose\train2\weights\best.pt'
+    hl_py_path = r'E:\RoadHoriDet\horizenLine\train\runs\pose\yolo11_Dysample_pl\weights\best.pt'
+    file_path = r'E:\RoadHoriDet\horizenLine\datasets\BoxCars116k\predictDataset\l2.png'
+    json_path = r'E:\RoadHoriDet\horizenLine\datasets\json_data\session2_left\system_dubska_optimal_calib.json'
 
     # 计算真实的k和b
     gt_k, gt_b = None, None
@@ -36,9 +32,6 @@ if __name__ == '__main__':
             print("真实的k：", gt_k, " b:", gt_b)
             print("真实的vp:", gt_vp1, "  ", gt_vp2)
 
-    # gt_k, gt_b=None, None
-    # gt_vp1,gt_vp2=(0,401),(1920,437)
-    # gt_k, gt_b = calculate_line_kb(gt_vp1, gt_vp2)
     print("真实的k：", gt_k, " b:", gt_b)
     print("真实的vp:", gt_vp1, "  ", gt_vp2)
 
