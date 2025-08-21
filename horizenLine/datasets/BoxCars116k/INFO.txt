@@ -1,0 +1,3 @@
+BoxCars116k dataset
+See https://github.com/JakubSochor/BoxCars for documentation, instructions, and citation
+This dataset is for research purposes ONLY
