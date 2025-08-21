@@ -1,0 +1,5 @@
+names:
+  0: vp
+kpt_shape: [2, 3]
+train: E:/liujiaxin/yolo11/horizenLine/datasets/BoxCars116k/train_nohm/images
+val: E:/liujiaxin/yolo11/horizenLine/datasets/BoxCars116k/val_nohm/images
